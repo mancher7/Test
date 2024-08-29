@@ -1,11 +1,11 @@
 {
-    "name": "GIPPER_BALL",
-    "short_name": "GIPPER_BALL",
+    "name": "FootballTime",
+    "short_name": "FootballTime",
     "start_url": "index.html",
     "display": "fullscreen",
-    "background_color": "#231F20",
+    "background_color": "#FFFFFF",
     "theme_color": "#000",
-    "description": "",
+    "description": "Football Time",
     "icons": [{
       "src": "TemplateData/icons/unity-logo-dark.png",
       "sizes": "144x144",

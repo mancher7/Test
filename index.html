@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | GIPPER_BALL</title>
+    <title>Unity WebGL Player | FootballTime</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <div id="unity-container">
-      <canvas id="unity-canvas" width=1080 height=2340 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1980 height=1020 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -59,12 +59,12 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Test.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Test.data",
-        frameworkUrl: buildUrl + "/Test.framework.js",
-        codeUrl: buildUrl + "/Test.wasm",
+        dataUrl: buildUrl + "/Test.data.unityweb",
+        frameworkUrl: buildUrl + "/Test.framework.js.unityweb",
+        codeUrl: buildUrl + "/Test.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "MANCHER7",
-        productName: "GIPPER_BALL",
+        companyName: "TFLStudio",
+        productName: "FootballTime",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -84,6 +84,7 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
       }
 
+      canvas.style.background = "url('" + buildUrl + "/Test.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
